@@ -34,12 +34,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Projects\Application\Internal\" />
-      <Folder Include="Projects\Domain\Model\Commands\" />
-      <Folder Include="Projects\Domain\Repositories\" />
-      <Folder Include="Projects\Domain\Services\" />
-      <Folder Include="Projects\Infrastructure\Persistence\EFC\Configuration\" />
-      <Folder Include="Projects\Infrastructure\Persistence\EFC\Repositories\" />
       <Folder Include="Projects\Interfaces\Resources\" />
       <Folder Include="Projects\Interfaces\Transform\" />
     </ItemGroup>

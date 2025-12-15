@@ -5,6 +5,10 @@ using eb7429u20211c221.Shared.Infrastructure.Persistence.EFC.Configuration;
 using eb7429u20211c221.Shared.Infrastructure.Persistence.EFC.Repositories;
 using Cortex.Mediator.Commands;
 using Cortex.Mediator.DependencyInjection;
+using eb7429u20211c221.Projects.Application.Internal.QueryServices;
+using eb7429u20211c221.Projects.Domain.Repositories;
+using eb7429u20211c221.Projects.Domain.Services;
+using eb7429u20211c221.Projects.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using eb7429u20211c221.TimeEntries.Application.Internal.CommandServices;
@@ -101,6 +105,8 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 // Product Bounded Context Injection Configuration
 builder.Services.AddScoped<ITimesRepository, TimesRepository>();
 builder.Services.AddScoped<ITimesCommandService, TimesCommandService>();
+builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+builder.Services.AddScoped<IProjectQueryService, ProjectQueryServices>();
 
 // Mediator Configuration
 

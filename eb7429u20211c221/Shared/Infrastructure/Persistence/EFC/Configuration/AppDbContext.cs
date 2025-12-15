@@ -1,3 +1,4 @@
+using eb7429u20211c221.Projects.Infrastructure.Persistence.EFC.Configuration;
 using eb7429u20211c221.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using eb7429u20211c221.TimeEntries.Infrastructure.Persistence.EFC.Configuration;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
@@ -42,9 +43,8 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
     {
         base.OnModelCreating(builder);
 
-        // Publishing Context
-        
         builder.ApplyTimesConfiguration();
+        builder.ApplyProjectConfiguration();
         
         // General Naming Convention for the database objects
         builder.UseSnakeCaseNamingConvention();
