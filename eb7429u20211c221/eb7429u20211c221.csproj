@@ -42,14 +42,6 @@
       <Folder Include="Projects\Infrastructure\Persistence\EFC\Repositories\" />
       <Folder Include="Projects\Interfaces\Resources\" />
       <Folder Include="Projects\Interfaces\Transform\" />
-      <Folder Include="TimeEntries\Application\Internal\" />
-      <Folder Include="TimeEntries\Domain\Model\Commands\" />
-      <Folder Include="TimeEntries\Domain\Repositories\" />
-      <Folder Include="TimeEntries\Domain\Services\" />
-      <Folder Include="TimeEntries\Infrastructure\Persistence\EFC\Configuration\" />
-      <Folder Include="TimeEntries\Infrastructure\Persistence\EFC\Repositories\" />
-      <Folder Include="TimeEntries\Interfaces\Resources\" />
-      <Folder Include="TimeEntries\Interfaces\Transform\" />
     </ItemGroup>
 
 </Project>

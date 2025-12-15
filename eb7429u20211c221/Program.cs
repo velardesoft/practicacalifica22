@@ -7,10 +7,10 @@ using Cortex.Mediator.Commands;
 using Cortex.Mediator.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using eb7429u20211c221.Product.Application.Internal.CommandServices;
-using eb7429u20211c221.Product.Domain.Repositories;
-using eb7429u20211c221.Product.Domain.Services;
-using eb7429u20211c221.Product.Infrastructure.Persistence.EFC.Repositories;
+using eb7429u20211c221.TimeEntries.Application.Internal.CommandServices;
+using eb7429u20211c221.TimeEntries.Domain.Repositories;
+using eb7429u20211c221.TimeEntries.Domain.Services;
+using eb7429u20211c221.TimeEntries.Infrastructure.Persistence.EFC.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -99,8 +99,8 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 // Product Bounded Context Injection Configuration
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IProductCommandService, ProductCommandService>();
+builder.Services.AddScoped<ITimesRepository, TimesRepository>();
+builder.Services.AddScoped<ITimesCommandService, TimesCommandService>();
 
 // Mediator Configuration
 

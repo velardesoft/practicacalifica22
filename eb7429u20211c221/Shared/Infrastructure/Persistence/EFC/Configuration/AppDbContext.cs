@@ -1,5 +1,5 @@
-using eb7429u20211c221.Product.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using eb7429u20211c221.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+using eb7429u20211c221.TimeEntries.Infrastructure.Persistence.EFC.Configuration;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
 
@@ -44,7 +44,7 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
 
         // Publishing Context
         
-        builder.ApplyProductsConfiguration();
+        builder.ApplyTimesConfiguration();
         
         // General Naming Convention for the database objects
         builder.UseSnakeCaseNamingConvention();
